@@ -33,14 +33,17 @@ class BaseModel:
             self.created_at = datetime.now()
             self.updated_at = datetime.now()
 
+
+        storage.new(self)
+
     def __str__(self):
         """Returns a tring representaion of the instance"""
         return f"{[self.__class__.__name__]}, {self.id}, {self.__dict__}"
 
     def save(self):
         """Updates and saves the instance when updated"""
-
         self.updated_at = datetime.now()
+        storage.save()
 
     def to_dict(self):
         """Generates a dictionary representation of an instance.
