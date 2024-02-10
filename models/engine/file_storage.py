@@ -48,5 +48,5 @@ class FileStorage:
                 for key, value in from_json.items():
                     attr_cls_name = value.pop("__class__")
                     self.new(eval(attr_cls_name)(**value))
-        except:
+        except FileNotFoundError:
             pass
