@@ -1,13 +1,13 @@
 #!/usr/bin/python3
 
 """
-    Defines a class Amenity.
+    Defines a class State.
 """
 
 from models.base_model import BaseModel
 
 
-class Amenity(BaseModel):
-    """Represent a Amenity."""
+class State(BaseModel):
+    """Represent a State."""
 
     name = ""
