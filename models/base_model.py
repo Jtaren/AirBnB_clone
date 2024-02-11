@@ -34,7 +34,7 @@ class BaseModel:
 
     def __str__(self):
         """Returns a tring representaion of the instance"""
-        return f"{[self.__class__.__name__]}, {self.id}, {self.__dict__}"
+        return f"{[self.__class__.__name__]} ({self.id}) {self.__dict__}"
 
     def save(self):
         """Updates and saves the instance when updated"""
