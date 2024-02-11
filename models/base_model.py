@@ -5,6 +5,7 @@ import uuid
 from datetime import datetime
 import models
 
+
 class BaseModel:
     """Class Basemodel is a parent class that defines all common
     attributes and methods for other classes
